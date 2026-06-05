@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "spirmedical-cron",
+  "main": "index.ts",
+  "compatibility_date": "2026-06-05",
+  "compatibility_flags": ["nodejs_compat"],
+  "triggers": {
+    "crons": ["0 6 * * *", "0 8 * * *", "0 9 * * *"]
+  },
+  "vars": {
+    "APP_URL": "https://spirmedical-wep.YOUR-SUBDOMAIN.workers.dev"
+  },
+  "observability": {
+    "enabled": true
+  }
+}

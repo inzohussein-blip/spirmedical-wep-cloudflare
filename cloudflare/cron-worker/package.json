@@ -1,0 +1,16 @@
+{
+  "name": "spirmedical-cron",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cloudflare Cron Worker for Spir Medical (replaces Vercel crons)",
+  "scripts": {
+    "dev": "wrangler dev --test-scheduled",
+    "deploy": "wrangler deploy",
+    "secret": "wrangler secret put CRON_SECRET",
+    "tail": "wrangler tail"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260605.0",
+    "wrangler": "^4.98.0"
+  }
+}
